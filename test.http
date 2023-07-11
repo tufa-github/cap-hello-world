@@ -1,0 +1,7 @@
+GET http://localhost:4004/say/hello(str='tufa')
+
+###
+GET http://localhost:4004/say/sum(a=3,b=5)
+
+###
+GET http://localhost:4004/say/combined(str='tufa',a=7,b=5)
