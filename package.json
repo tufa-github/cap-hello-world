@@ -10,7 +10,8 @@
     "express": "^4",
     "@sap/xssec": "^3",
     "passport": "^0",
-    "hdb": "^0.19.0"
+    "hdb": "^0.19.0",
+    "@sap/cds-mtxs": "^1"
   },
   "devDependencies": {
     "sqlite3": "^5"
@@ -24,7 +25,8 @@
         "auth": "xsuaa",
         "db": "hana-cloud"
       },
-      "db": "sql"
+      "db": "sql",
+      "extensibility": true
     }
   }
 }
