@@ -25,7 +25,12 @@
         "auth": "xsuaa",
         "db": "hana-cloud"
       },
-      "db": "sql",
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "book.db"
+        }
+      },
       "extensibility": true
     }
   }

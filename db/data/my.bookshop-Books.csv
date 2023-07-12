@@ -1,3 +1,6 @@
-ID;title;stock
-1;Wuthering Heights;100
-2;Jane Eyre;500
+ID,title,stock,isBestseller
+101,It Starts With Us,200,true
+102,Reminders of Him,200,true
+103, All Your Perfects,200,false
+104,The Light We Carry,200,false
+201, On Purpose,200,true

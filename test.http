@@ -5,3 +5,44 @@ GET http://localhost:4004/say/sum(a=3,b=5)
 
 ###
 GET http://localhost:4004/say/combined(str='tufa',a=7,b=5)
+
+###
+GET http://localhost:4004/Catalog/Books
+
+###
+POST http://localhost:4004/Catalog/Books
+Content-Type: application/json
+
+{ "ID":3, "title":"Fourth Wing", "stock":200 }
+
+###
+GET http://localhost:4004/Catalog/Books?$select=ID,title
+
+###
+GET http://localhost:4004/Catalog/Books?$count=true
+
+
+
+#######  message test script #####
+GET http://localhost:4004/public/
+
+###
+GET http://localhost:4004/public/UnreadMessages
+
+###
+GET http://localhost:4004/public/UnreadMessages/$count
+
+
+###
+POST http://localhost:4004/public/UnreadMessages
+Content-Type: application/json
+
+{
+    "ID" : "93e165a9-d88e-44be-9259-9d48efeb3218",
+    "conversationParticipation_ID": "fbcd7617-3e27-46a5-902d-e29b345ac77a",
+    "message_ID" :"a086857d-10e1-4690-b6df-84e1ffd740b3",
+    "user_ID" : "1bb684d8-bfe0-4532-b4b4-c224d4828592"
+}
+
+
+
